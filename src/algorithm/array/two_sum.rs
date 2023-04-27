@@ -39,8 +39,7 @@ pub mod tests {
     pub fn test_two_sum() {
         let nums = vec![3,3];
         let target = 6;
-        let result = two_sum(nums, target);
-        println!("{:?}", result);
-        assert!(result==vec![0,1] || result == vec![1,0]);
+        let result = two_sum(nums.clone(), target);
+        assert!(result==vec![0,1] || result == vec![1,0],"\n input:{:?}", nums);
     }
 }
